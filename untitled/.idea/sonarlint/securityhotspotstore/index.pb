@@ -11,3 +11,11 @@ b
 2src/main/java/org/example/service/BookService.java,4\e\4e0afb3f42ab32527a23feda117f6bd25e7844be
 k
 ;src/main/java/org/example/service/impl/BookServiceImpl.java,4\9\49c61c65e1d97bd6e476160a50bd22ce21ce79d8
+h
+8src/main/java/org/example/repository/BookRepository.java,b\7\b7783d39ca81aa027ce3a0f700c9f233ca4aa9da
+`
+0src/main/java/org/example/entity/BookEntity.java,8\e\8e7bab507d9e728ef6cf98c958018520dba04ab5
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
