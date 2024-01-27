@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookServiceImpl implements BookService {
@@ -33,4 +34,23 @@ public class BookServiceImpl implements BookService {
     public List<BookEntity> getBooks() {
         return (List<BookEntity>) bookRepository.findAll();
     }
+
+    @Override
+    public boolean deleteBook(Long id) {
+       if (bookRepository.existsById(id)){
+           bookRepository.deleteById(id);
+           return true;
+       }else {
+           return false;
+       }
+    }
+
+    @Override
+    public Book searchBook(Long id) {
+        Optional<BookEntity> byId =bookRepository.findById(id);
+        return mapper.map(byId,Book.class);
+
+    }
+
+
 }
