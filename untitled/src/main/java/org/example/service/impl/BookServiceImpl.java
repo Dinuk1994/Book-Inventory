@@ -1,5 +1,6 @@
 package org.example.service.impl;
 
+import org.apache.catalina.mapper.Mapper;
 import org.example.dto.Book;
 import org.example.entity.BookEntity;
 import org.example.repository.BookRepository;
@@ -19,7 +20,7 @@ public class BookServiceImpl implements BookService {
     ModelMapper mapper;
 
     @Bean
-    public void setup(){
+    void setup(){
         this.mapper=new ModelMapper();
     }
     @Override
